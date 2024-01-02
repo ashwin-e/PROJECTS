@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto',sans-serif;
+
+}
+nav.logo img,
+footer .logo img{
+        width: 40px;
+        height: 40px;
+}
+a{
+    text-decoration:none ;
+    color: rgb(1, 1, 13);
+    transition: 0.3s ease;
+
+
+}
+a:hover{
+    color: blue !important;
+
+
+}
+h5{
+    font-size: 20px;
+}
+li{
+    list-style: none;
+
+}
+nav{
+    background-color: #fff;
+    position: sticky;
+    top: 0 ;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0,0,0,0.1);
+
+
+
+
+}
+nav .logo,
+footer.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+nav .logo a,
+footer .logo a{
+        margin-left: 8px;
+        font-weight: bold;
+        font-size: 20px;
+
+
+}
+nav ul,
+footer .top ul{
+    display: flex;
+
+    gap:40px
+}
+
+nav button{
+    color:darkblue;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+nav button:hover{
+    background-color: blue;
+    border-color: blue;
+    color: #fff;
+
+
+}
+nav button#menubutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+
+
+}
+.main{
+    background-color: #deebee;
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.main .left h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+
+
+}
+.main .left h3 span{
+    color: blue;
+
+}
+.main .left p{
+    color: darkblue;
+    font-size: 22px;
+    margin-top: 20px;
+
+}
+
+
+
+.main .left button{
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: blue;
+    padding: 14px 24px ;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+
+}
+.main .right img{
+    width: 500px;
+
+}
+.skills {
+    padding: 110px 85px 0;
+   
+}
+
+.skills h3,
+.about .right h3,
+.protofolio .header h3,
+.feedback h3 {
+    font-size: 40px;  
+    margin-top: 20px;
+}
+
+.skills .skill-items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skill-items .item {
+    background-color: #deebee;
+    width: 100%;  /* Adjusted width */
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;  /* Corrected typo */
+    transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover {
+    border-color: blue;
+}
+
+.skills .skill-items .item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-items .item .icon i {
+    font-size: 26px;
+    color: #006b6a;
+}
+
+.skills .skill-items .item h4,
+.protofolio .protofo-items .items .info h4 {
+    font-size: 18px;
+}
+
+.skills .skill-items .item p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(10, 10, 71);
+}
+.about{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.about .left img{
+    width: 440px;
+
+}
+.about .left {
+    background-color:#c2e0e6;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+
+}
+.about .left:hover{
+    background-color: rgb(129, 151, 157);
+
+}
+
+.about .right p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+.portfolio{
+   background-color: #deebee;
+   padding: 110px 85px;
+
+}
+.portfolio .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+}
+.portfolio  .header button{
+    background-color: #ff0000;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+}
+.portfolio .header button i{
+
+    font-size: 26px;
+
+}
+.portfolio .pro-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.portfolio .pro-items .proa{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+
+}
+.portfolio .pro-items .proa :hover{
+    border-color: #5e3bee;
+
+}
+.portfolio .pro-items .proa img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+
+
+
+}
+.portfolio .pro-items .proa .pro1-info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+
+}
+.portfolio .pro-items .proa .pro1-info p{
+    font-size: 13px;
+
+}
+.portfolio .pro-items .proa .pro1-info a{
+    text-decoration:underline ;
+    text-underline-offset: 10px;
+    text-decoration-color: #5e3bee;
+
+}
+.portfolio .pro-items .proa .pro1-info a i{
+    margin-left: 2px;
+    font-size: 16px;
+    
+}
+
+.feedback {
+    padding: 110px 85px;
+  
+}
+.feedback .customers{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+.feedback .customers .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #006b6a;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.feedback .customers .item .rating{
+    color: #006b6a;
+
+}
+.feedback .customers .item:hover{
+    border-color: #5e3bee;
+    font-size: 22px
+
+
+}
+.feedback .customers .item p{
+    line-height: 22px;
+    font-size: 14px;
+
+}
+.feedback .customers .item .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.feedback .customers .item .user img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.feedback .customers .item .user h5{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 3px;
+
+
+}
+.feedback .customers .item p{
+    font-size: 12px;
+}
+
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+   
+}
+footer .top,
+ .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer .top .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+footer .separator{
+    width: 100%;
+    height: 1px;
+    background-color: #282928;
+    margin: 30px 0 20px;
+
+}
+footer .bottom p{
+    font-size: 12px;
+
+}
+footer .bottom .links a{
+    font-size: 12px;
+    margin-left: 14px;
+
+}
+
+
+
